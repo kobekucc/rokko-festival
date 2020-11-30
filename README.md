@@ -3,9 +3,9 @@
 ## 概要
 
 Vue.js+Golangでサイトを作成。
-フロントはVue-cilでプロジェクトを作成した。デプロイには
+フロントはVue-cilでプロジェクトを作成。デプロイには
 [heroku](https://dashboard.heroku.com/)
-を利用した。
+を利用した
 ### 使用したもの
 * Vuetify(VueのUIライブラリ)
 * Vuex(Vueの状態管理ライブラリ)
@@ -15,9 +15,17 @@ Vue.js+Golangでサイトを作成。
     * vue-axios(作成したAPIサーバを利用するために使用)
     * express(herokuへデプロイする際に使用)
     
+    
 
 
 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 後世の人へ
+何かしらの理由でこれを使いたくなった際は、
+`src/assets/`  
+以下にある`free`または`theme`のjsonファイルを適宜書き換えて画像を配置し直せば動きそうです。
+jsonでのidプロパティ は通し番号で、DBへ投票やコメントを投げる際に作品を区別するためにふっています。
+filenameは名前通りイラストデータの名前で、free、themeディレクトリ 以下にある画像と同じ名前を指定してやる必要があります。
+このjsonは`srcs/components/viewer.vue`へ渡しているので、詳しくはここを見てください。
+
+そもそも自分だけで書いたコードなので、他人が読むことを想定しておらずかなり汚くなってます。読みづらいと思うので、もし何かあれば2020年度六甲祭係までお願いします()
